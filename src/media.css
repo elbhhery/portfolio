@@ -1,0 +1,98 @@
+/* media */
+/* global Screens*/
+@media (min-width: 768px) {
+  .container {
+    width: 660px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 880px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1040px;
+  }
+}
+/* meduim */
+@media (max-width: 992px) {
+  .intro .container h2 {
+    font-size: 3rem;
+  }
+}
+
+/* small */
+
+@media (max-width: 768px) {
+  /* nav */
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: #101822;
+    width: 100%;
+    height: 83vh;
+    padding-top: 4rem;
+  }
+  nav ul li {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    padding: 0;
+  }
+  header img {
+    width: 10rem;
+  }
+  /* intro */
+  .intro {
+    padding: 2rem 1rem 0;
+  }
+  .intro .container {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .intro .container .header {
+    text-align: center;
+  }
+  .intro .container h2 {
+    font-size: 2rem;
+  }
+  .intro .container p {
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+  .intro .container img {
+    width: 16rem;
+  }
+  /* links */
+  .links ul {
+    flex-direction: column;
+  }
+  .links ul li {
+    margin: 0 auto 4rem;
+  }
+  .about {
+    text-align: center;
+    padding: 1rem;
+  }
+  .portfolio {
+    text-align: center;
+    padding: 1rem;
+  }
+  .experience {
+    text-align: center;
+    padding: 1rem;
+  }
+  .contact {
+    text-align: center;
+  }
+}
+
+@media (max-width: 868px) {
+  .side-bar {
+    display: none;
+  }
+}
