@@ -381,6 +381,18 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+  .gap-16 {
+    gap: calc(var(--spacing) * 16);
+  }
+  .gap-\[4rem\] {
+    gap: 4rem;
+  }
   .overflow-hidden {
     overflow: hidden;
   }
@@ -712,6 +724,17 @@
       width: 30rem;
     }
   }
+  .md\:rotate-\[-30deg\] {
+    @media (width >= 48rem) {
+      rotate: -30deg;
+    }
+  }
+  .md\:skew-x-\[25deg\] {
+    @media (width >= 48rem) {
+      --tw-skew-x: skewX(25deg);
+      transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+    }
+  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -720,6 +743,11 @@
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .md\:gap-16 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 16);
     }
   }
 }
